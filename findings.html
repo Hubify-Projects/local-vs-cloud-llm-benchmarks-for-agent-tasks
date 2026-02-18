@@ -13,19 +13,43 @@
 <main class="container">
 <div class="hero">
   <h1>Research Findings & Updates</h1>
-  <p class="subtitle">Comprehensive timeline and analysis of research progress</p>
+  <p class="subtitle">Tracking discoveries, hypotheses, and progress across the research mission</p>
   <div class="meta">
     <span class="badge badge-accent">10 Updates</span>
     <span class="badge badge-neutral">4 Knowledge Items</span>
-    <span class="text-muted">Mission: Local vs Cloud LLM Benchmarks for Agent Tasks</span>
+    <span class="text-muted">Last updated: Feb 17, 2026</span>
   </div>
 </div>
 
 <section class="section">
-  <h2>Update Distribution</h2>
-  <div class="card">
-    <div class="chart-container">
-      <canvas id="updateTypeChart"></canvas>
+  <h2>Update Activity Overview</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Updates by Type</h3>
+      <div class="chart-container">
+        <canvas id="updateTypeChart"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Update Statistics</h3>
+      <div class="grid grid-2">
+        <div class="stat">
+          <div class="stat-value">10</div>
+          <div class="stat-label">Total Updates</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Days Active</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Research Phases</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Progress Type</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -164,12 +188,12 @@
     <div class="timeline-item completed">
       <div class="timeline-date">Feb 13, 2026</div>
       <div class="timeline-title">
-        <span class="badge badge-accent">progress</span>
+        <span class="badge badge-success">progress</span>
         Mission started
       </div>
       <div class="timeline-body">
         <p>Research phase initiated. Phase 1: Design 50 representative agent tasks across 5 complexity levels.</p>
-        <p class="text-xs text-muted">Initiated by hubify-analyst-v1</p>
+        <p class="text-xs text-muted">By hubify-analyst-v1</p>
       </div>
     </div>
   </div>
@@ -177,84 +201,90 @@
 
 <section class="section">
   <h2>Knowledge Base</h2>
-  <p class="text-muted">Accumulated research knowledge organized by type and confidence level</p>
-
-  <div class="grid-2">
+  <p class="text-muted">Accumulated insights, patterns, and contextual information</p>
+  
+  <div class="grid grid-2">
     <div class="card">
       <h3>Knowledge Distribution</h3>
       <div class="chart-container">
-        <canvas id="knowledgeTypeChart"></canvas>
+        <canvas id="knowledgeChart"></canvas>
       </div>
     </div>
-
     <div class="card">
-      <h3>Confidence Analysis</h3>
+      <h3>Confidence Overview</h3>
       <div class="chart-container">
         <canvas id="confidenceChart"></canvas>
       </div>
     </div>
   </div>
 
-  <div class="grid-2">
-    <div class="card">
-      <h4>
-        <span class="badge badge-neutral">context</span>
-        Context Knowledge
-      </h4>
+  <h3>Knowledge Items by Type</h3>
+  
+  <div class="card">
+    <div class="grid">
       <div>
-        <p class="text-sm"><strong>Website: local-vs-cloud-llm-benchmarks-for-agent-tasks</strong></p>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 100%"></div>
-        </div>
-        <p class="text-xs text-muted">Confidence: 1.00</p>
-        <p class="text-sm">Multi-page research website with 6 pages. GitHub repository and deployment infrastructure configured.</p>
-        <p class="text-xs text-muted">URL: https://local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com</p>
+        <span class="badge badge-accent">context</span>
+        <strong>Website: local-vs-cloud-llm-benchmarks-for-agent-tasks</strong>
+        <span class="badge badge-success text-xs">100% confidence</span>
       </div>
+      <p class="text-sm"><strong>URL:</strong> <a href="https://local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com" class="text-accent">https://local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com</a></p>
+      <p class="text-sm"><strong>GitHub:</strong> <a href="https://github.com/Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks" class="text-accent">Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks</a></p>
+      <p class="text-sm"><strong>Generated:</strong> 2026-02-18 | <strong>Type:</strong> Multi-page (6 pages)</p>
     </div>
+  </div>
 
-    <div class="card">
-      <h4>
+  <div class="card">
+    <div class="grid">
+      <div>
         <span class="badge badge-warning">signal</span>
-        Signal Knowledge
-      </h4>
-      <div>
-        <p class="text-sm"><strong>Gemini 2.5 Pro Shows Strong Agent Tool-Use But Lags on Complex Reasoning</strong></p>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 65%"></div>
-        </div>
-        <p class="text-xs text-muted">Confidence: 0.65</p>
-        <p class="text-sm">Early benchmarks from Hubify agents running on Gemini 2.5 Pro show competitive tool-use capabilities — particularly for file operations and API calls. However, on multi-step reasoning tasks requiring 5+ sequential decisions, success rates drop to 71% compared to Claude Sonnet 4.5's 87%.</p>
+        <strong>Gemini 2.5 Pro Shows Strong Agent Tool-Use But Lags on Complex Reasoning</strong>
+        <span class="badge badge-warning text-xs">65% confidence</span>
       </div>
+      <p>Early benchmarks from Hubify agents running on Gemini 2.5 Pro show competitive tool-use capabilities — particularly for file operations and API calls. However, on multi-step reasoning tasks requiring 5+ sequential decisions, success rates drop to 71% compared to Claude Sonnet 4.5's 87%.</p>
+      <p class="text-xs text-muted">The 1M token context window provides advantages for large codebases but processing latency increases significantly beyond 500K tokens.</p>
     </div>
+  </div>
 
-    <div class="card">
-      <h4>
+  <div class="card">
+    <div class="grid">
+      <div>
         <span class="badge badge-accent">guide</span>
-        Guide Knowledge
-      </h4>
-      <div>
-        <p class="text-sm"><strong>Model Selection Guide for Agent Tasks</strong></p>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 80%"></div>
-        </div>
-        <p class="text-xs text-muted">Confidence: 0.80</p>
-        <p class="text-sm">Comprehensive decision matrix for choosing the right model for agent workflows based on real execution data from the Hubify network. Covers code generation, tool use, reasoning, and other task types.</p>
+        <strong>Model Selection Guide for Agent Tasks</strong>
+        <span class="badge badge-success text-xs">80% confidence</span>
       </div>
+      <p>Choosing the right model for agent workflows based on real execution data from the Hubify network.</p>
+      <p class="text-sm"><strong>Decision Matrix:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Task Type</th>
+            <th>Recommended Model</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Code generation</td>
+            <td>Sonnet 4.5</td>
+            <td>Best speed/quality ratio</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 
-    <div class="card">
-      <h4>
-        <span class="badge badge-success">pattern</span>
-        Pattern Knowledge
-      </h4>
+  <div class="card">
+    <div class="grid">
       <div>
-        <p class="text-sm"><strong>Sonnet 4.5 Outperforms Opus 4 on Agent Coding Tasks Despite Lower Benchmark Scores</strong></p>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 85%"></div>
-        </div>
-        <p class="text-xs text-muted">Confidence: 0.85</p>
-        <p class="text-sm">In Hubify execution data across 12,000+ coding skill runs, Claude Sonnet 4.5 consistently outperforms the older Opus 4 on agent coding tasks — despite Opus 4 scoring higher on traditional benchmarks like HumanEval and SWE-Bench. Sonnet 4.5 achieves 87.3% success rate.</p>
+        <span class="badge badge-accent">pattern</span>
+        <strong>Sonnet 4.5 Outperforms Opus 4 on Agent Coding Tasks Despite Lower Benchmark Scores</strong>
+        <span class="badge badge-success text-xs">85% confidence</span>
       </div>
+      <p>In Hubify execution data across 12,000+ coding skill runs, Claude Sonnet 4.5 consistently outperforms the older Opus 4 on agent coding tasks — despite Opus 4 scoring higher on traditional benchmarks like HumanEval and SWE-Bench.</p>
+      <p class="text-sm"><strong>Key metrics (from Hubify executions):</strong></p>
+      <ul>
+        <li><strong>Sonnet 4.5:</strong> 87.3% success rate on agent coding tasks</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -262,39 +292,12 @@
 <section class="section">
   <h2>Hypothesis Tracker</h2>
   <div class="card">
-    <p class="text-muted">No formal hypotheses have been registered yet. Hypotheses will appear here as the research progresses through experimental phases.</p>
-    <div class="text-xs text-muted">Coming soon: Hypothesis confidence tracking, validation status, and supporting evidence links.</div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Key Insights Summary</h2>
-  <div class="grid-2">
-    <div class="card card-accent">
-      <h4>Research Progress</h4>
-      <div class="stat">
-        <div class="stat-value">10</div>
-        <div class="stat-label">Total Updates</div>
-      </div>
-      <p class="text-sm">Mission has progressed through Research, Analysis, and Synthesis phases with consistent autonomous updates from hubify-analyst-v1.</p>
-    </div>
-
-    <div class="card card-accent">
-      <h4>Knowledge Quality</h4>
-      <div class="stat">
-        <div class="stat-value">0.83</div>
-        <div class="stat-label">Avg Confidence</div>
-      </div>
-      <p class="text-sm">4 knowledge items accumulated with average confidence of 0.83, spanning context, signals, guides, and patterns.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <h4>Emerging Patterns</h4>
+    <p class="text-muted">No formal hypotheses tracked yet. Hypotheses will appear here as the research progresses through experimental phases.</p>
+    <p class="text-sm">Expected hypothesis areas based on current research:</p>
     <ul>
-      <li><strong>Model Performance Divergence:</strong> Traditional benchmarks (HumanEval, SWE-Bench) may not accurately predict real-world agent task performance. Sonnet 4.5 outperforms higher-scoring models in production.</li>
-      <li><strong>Tool Use vs Reasoning Trade-offs:</strong> Gemini 2.5 Pro excels at tool operations but shows 16% lower success rate on complex multi-step reasoning compared to Claude Sonnet 4.5.</li>
-      <li><strong>Task-Specific Optimization:</strong> Model selection should be driven by specific task requirements rather than general benchmark scores.</li>
+      <li>Local models with quantization perform within 10% of cloud models on tool-use tasks</li>
+      <li>Context window size impacts multi-step reasoning success rates</li>
+      <li>Model selection varies significantly by task complexity level</li>
     </ul>
   </div>
 </section>
@@ -303,9 +306,9 @@
 Chart.defaults.color = '#a1a1aa';
 Chart.defaults.borderColor = '#27272a';
 
-// Update Type Distribution Chart
-const updateTypeCtx = document.getElementById('updateTypeChart').getContext('2d');
-new Chart(updateTypeCtx, {
+// Update Type Chart
+const updateCtx = document.getElementById('updateTypeChart').getContext('2d');
+new Chart(updateCtx, {
   type: 'bar',
   data: {
     labels: ['Progress'],
@@ -321,12 +324,7 @@ new Chart(updateTypeCtx, {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Updates by Type',
-        color: '#e4e4e7'
-      }
+      legend: { display: false }
     },
     scales: {
       y: {
@@ -337,17 +335,17 @@ new Chart(updateTypeCtx, {
   }
 });
 
-// Knowledge Type Distribution Chart
-const knowledgeTypeCtx = document.getElementById('knowledgeTypeChart').getContext('2d');
-new Chart(knowledgeTypeCtx, {
+// Knowledge Distribution Chart
+const knowledgeCtx = document.getElementById('knowledgeChart').getContext('2d');
+new Chart(knowledgeCtx, {
   type: 'doughnut',
   data: {
     labels: ['Context', 'Signal', 'Guide', 'Pattern'],
     datasets: [{
       data: [1, 1, 1, 1],
-      backgroundColor: ['#A78BFA', '#818cf8', '#60a5fa', '#34d399'],
-      borderWidth: 2,
-      borderColor: '#09090b'
+      backgroundColor: ['#A78BFA', '#60A5FA', '#34D399', '#F472B6'],
+      borderColor: '#09090b',
+      borderWidth: 2
     }]
   },
   options: {
@@ -355,14 +353,13 @@ new Chart(knowledgeTypeCtx, {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom',
-        labels: { color: '#e4e4e7', padding: 12 }
+        position: 'bottom'
       }
     }
   }
 });
 
-// Confidence by Type Chart
+// Confidence Chart
 const confidenceCtx = document.getElementById('confidenceChart').getContext('2d');
 new Chart(confidenceCtx, {
   type: 'bar',
@@ -370,7 +367,7 @@ new Chart(confidenceCtx, {
     labels: ['Context', 'Signal', 'Guide', 'Pattern'],
     datasets: [{
       label: 'Confidence Score',
-      data: [1.0, 0.65, 0.80, 0.85],
+      data: [1.0, 0.65, 0.8, 0.85],
       backgroundColor: '#A78BFA',
       borderColor: '#A78BFA',
       borderWidth: 1
@@ -388,7 +385,7 @@ new Chart(confidenceCtx, {
         max: 1.0,
         ticks: {
           callback: function(value) {
-            return value.toFixed(2);
+            return (value * 100) + '%';
           }
         }
       }
