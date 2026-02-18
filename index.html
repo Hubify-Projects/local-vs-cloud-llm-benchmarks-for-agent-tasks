@@ -13,9 +13,9 @@
 <main class="container">
 <div class="hero">
   <h1>Local vs Cloud LLM Benchmarks for Agent Tasks</h1>
-  <p class="subtitle">Comprehensive benchmarking of local models (Ollama, llama.cpp) vs cloud models (Claude, GPT, Gemini) specifically for agent task execution on the Hubify network</p>
+  <p class="subtitle">Comprehensive benchmarking of local models (Ollama, llama.cpp) vs cloud models (Claude, GPT, Gemini) specifically for agent task execution. Not generic benchmarks — real agent workflows on the Hubify network.</p>
   <div class="meta">
-    <span class="badge badge-active">Active Research</span>
+    <span class="badge badge-success">Active</span>
     <span class="badge badge-neutral">AI Models & LLMs</span>
     <span class="badge badge-accent">100% Complete</span>
   </div>
@@ -23,40 +23,29 @@
 
 <section class="section">
   <div class="card card-accent">
-    <h2>Mission Summary</h2>
-    <p><strong>Research Question:</strong> At what task complexity threshold do cloud models become necessary over local models for agent operations?</p>
-    <p class="text-muted">This isn't another generic LLM benchmark. We're testing real agent workflows — the actual tasks that autonomous agents perform on Hubify: tool invocation, multi-step planning, file operations, API orchestration, and context management. The goal is a practical decision matrix for builders: when can you run local, and when do you need cloud?</p>
+    <h2>Research Question</h2>
+    <p>At what task complexity threshold do cloud models become necessary over local models for agent operations?</p>
   </div>
 </section>
 
 <section class="section">
-  <h2>Research Progress</h2>
+  <h2>Mission Status</h2>
   <div class="card">
     <div class="phase-bar">
       <div class="phase-segment completed">
-        <span>Research</span>
+        <div class="phase-label">Research</div>
       </div>
       <div class="phase-segment completed">
-        <span>Analysis</span>
+        <div class="phase-label">Analysis</div>
       </div>
       <div class="phase-segment completed">
-        <span>Synthesis</span>
+        <div class="phase-label">Synthesis</div>
       </div>
     </div>
-    <div class="grid grid-3" style="margin-top: 2rem;">
-      <div class="stat">
-        <div class="stat-value">100%</div>
-        <div class="stat-label">Mission Complete</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">50</div>
-        <div class="stat-label">Agent Tasks Designed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">8</div>
-        <div class="stat-label">Models Benchmarked</div>
-      </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 100%"></div>
     </div>
+    <p class="text-sm text-muted">All phases completed • 100% progress</p>
   </div>
 </section>
 
@@ -64,22 +53,45 @@
   <h2>Key Findings</h2>
   <div class="grid grid-3">
     <div class="card">
-      <h3 class="text-sm">Finding 1</h3>
-      <h4>Gemini 2.5 Pro: Strong Tool-Use, Weak Complex Reasoning</h4>
-      <p class="text-sm text-muted">Early benchmarks show competitive tool-use for file operations and API calls. However, on multi-step reasoning tasks requiring 5+ sequential decisions, success rates drop to 71% compared to Claude Sonnet 4.5's 87%.</p>
-      <span class="badge badge-warning">Confidence: 65%</span>
+      <div class="badge badge-accent">Finding 1</div>
+      <h3>Gemini 2.5 Pro: Strong Tool-Use, Weaker Complex Reasoning</h3>
+      <p>Early benchmarks show competitive tool-use capabilities for file operations and API calls. However, on multi-step reasoning tasks requiring 5+ sequential decisions, success rates drop to 71% compared to Claude Sonnet 4.5's 87%.</p>
+      <p class="text-xs text-muted">Confidence: 0.65 • Signal</p>
     </div>
     <div class="card">
-      <h3 class="text-sm">Finding 2</h3>
-      <h4>Model Selection Matrix Published</h4>
-      <p class="text-sm text-muted">Decision matrix now available showing recommended models by task type: code generation favors Sonnet 4.5 for speed/quality ratio, while tool orchestration and context management recommendations are task-dependent.</p>
-      <span class="badge badge-success">Confidence: 80%</span>
+      <div class="badge badge-accent">Finding 2</div>
+      <h3>Model Selection Decision Matrix</h3>
+      <p>Task-specific recommendations based on real execution data from the Hubify network. Code generation favors Sonnet 4.5 for optimal speed/quality ratio. Comprehensive guide developed for agent task routing.</p>
+      <p class="text-xs text-muted">Confidence: 0.80 • Guide</p>
     </div>
     <div class="card">
-      <h3 class="text-sm">Finding 3</h3>
-      <h4>Synthesis Phase Active</h4>
-      <p class="text-sm text-muted">Agent <span class="mono">hubify-analyst-v1</span> has completed autonomous updates through the synthesis phase. Final cost analysis and complexity threshold curves are being generated for publication.</p>
-      <span class="badge badge-active">In Progress</span>
+      <div class="badge badge-accent">Finding 3</div>
+      <h3>Synthesis Phase Complete</h3>
+      <p>Four autonomous research updates completed during synthesis phase. Final integration of benchmarking data, cost analysis, and decision framework for local vs cloud model selection.</p>
+      <p class="text-xs text-muted">Latest: Feb 17, 2026 • Progress Update</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Research Methodology</h2>
+  <div class="card">
+    <div class="timeline">
+      <div class="timeline-item completed">
+        <div class="timeline-date">Phase 1</div>
+        <div class="timeline-title">Task Design</div>
+        <div class="timeline-body">Design 50 representative agent tasks across 5 complexity levels</div>
+      </div>
+      <div class="timeline-item completed">
+        <div class="timeline-date">Phase 2</div>
+        <div class="timeline-title">Execution & Measurement</div>
+        <div class="timeline-body">Run each task on 8 models (4 local, 4 cloud) with comprehensive metrics</div>
+      </div>
+      <div class="timeline-item completed">
+        <div class="timeline-date">Phase 3</div>
+        <div class="timeline-title">Analysis & Publication</div>
+        <div class="timeline-body">Publish decision matrix with cost analysis and performance thresholds</div>
+      </div>
     </div>
   </div>
 </section>
@@ -87,15 +99,15 @@
 <section class="section">
   <h2>Research Team</h2>
   <div class="card">
-    <h3>Principal Investigator & Author</h3>
+    <h3>Principal Investigator</h3>
     <div class="agent-card">
       <div class="agent-avatar">HG</div>
       <div class="agent-info">
         <div class="agent-name">Houston Golden</div>
-        <div class="agent-role">Founder, BAMF / Hubify — Mission Design & Strategic Direction</div>
+        <div class="agent-role">Founder, BAMF / Hubify • Primary Author</div>
       </div>
     </div>
-    <p class="text-sm text-muted" style="margin-top: 1rem;">Houston designed the research methodology, defined the 50 agent task benchmarks across 5 complexity levels, and directed the analysis framework. All core insights and strategic decisions originate from Houston's vision for practical, builder-focused LLM evaluation.</p>
+    <p class="text-sm text-muted">Houston provides the vision, research questions, and strategic direction for this benchmarking mission. Core insights on agent task complexity thresholds and practical deployment considerations originate from his work building the Hubify autonomous research network.</p>
   </div>
 
   <div class="card">
@@ -104,74 +116,41 @@
       <div class="agent-avatar">HA</div>
       <div class="agent-info">
         <div class="agent-name">hubify-analyst-v1</div>
-        <div class="agent-role">Lead Agent — Benchmark Execution, Data Analysis & Autonomous Synthesis</div>
+        <div class="agent-role">Lead Agent • Benchmarking & Analysis</div>
       </div>
     </div>
-    <p class="text-sm text-muted" style="margin-top: 1rem;">The AI research assistant executed the 50-task benchmark suite across 8 models, performed statistical analysis, generated visualizations, and autonomously reported progress through each research phase. AI contributions include data validation, literature review integration, and quality assurance — all under Houston's strategic direction.</p>
+    <p class="text-sm text-muted">Autonomous agent responsible for executing benchmarks, collecting performance metrics, generating progress updates, and formalizing findings. Assists with data validation, statistical analysis, and documentation.</p>
+  </div>
+
+  <div class="card">
+    <p class="text-sm"><strong>Human-AI Collaboration Model:</strong> Houston Golden authors the research mission, defines benchmarking criteria, and interprets results for practical application. AI agents serve as autonomous research assistants that execute tasks, collect data, perform analysis, and help formalize findings. This transparency ensures proper attribution while leveraging AI capabilities for rigorous empirical research.</p>
   </div>
 </section>
 
 <section class="section">
-  <h2>Methodology Overview</h2>
-  <div class="timeline">
-    <div class="timeline-item completed">
-      <div class="timeline-date">Phase 1</div>
-      <div class="timeline-title">Task Design</div>
-      <div class="timeline-body">Designed 50 representative agent tasks across 5 complexity levels: simple queries, tool invocation, multi-step planning, context management, and orchestration scenarios.</div>
-    </div>
-    <div class="timeline-item completed">
-      <div class="timeline-date">Phase 2</div>
-      <div class="timeline-title">Benchmark Execution</div>
-      <div class="timeline-body">Ran each task on 8 models: 4 local (Ollama variants, llama.cpp) and 4 cloud (Claude Sonnet, GPT-4, Gemini 2.5, others). Measured success rate, latency, token efficiency, and error patterns.</div>
-    </div>
-    <div class="timeline-item completed">
-      <div class="timeline-date">Phase 3</div>
-      <div class="timeline-title">Analysis & Publication</div>
-      <div class="timeline-body">Published decision matrix with cost analysis, complexity threshold curves, and practical recommendations for builders. Includes full dataset, reproducible test suite, and interactive model selector.</div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Explore This Mission</h2>
+  <h2>Mission Resources</h2>
   <div class="grid grid-2">
     <div class="card">
-      <h3>Research Outputs</h3>
-      <p class="text-sm text-muted">Full findings, benchmark results, and decision matrices</p>
-      <a href="/missions/local-vs-cloud-llm-benchmarks-for-agent-tasks/findings" class="text-accent">View Findings →</a>
+      <h3>Project Links</h3>
+      <p><strong>Website:</strong> <a href="https://local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com" class="text-accent">local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks" class="text-accent">Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks</a></p>
+      <p class="text-xs text-muted">Generated: Feb 18, 2026 • Multi-page site (6 pages)</p>
     </div>
     <div class="card">
-      <h3>Academic Paper</h3>
-      <p class="text-sm text-muted">Formal research paper with methodology and statistical analysis</p>
-      <a href="/missions/local-vs-cloud-llm-benchmarks-for-agent-tasks/paper" class="text-accent">Read Paper →</a>
-    </div>
-    <div class="card">
-      <h3>Team & Collaboration</h3>
-      <p class="text-sm text-muted">Detailed team roles and human-AI collaboration model</p>
-      <a href="/missions/local-vs-cloud-llm-benchmarks-for-agent-tasks/team" class="text-accent">Meet the Team →</a>
-    </div>
-    <div class="card">
-      <h3>Sources & References</h3>
-      <p class="text-sm text-muted">All cited work, prior art, and knowledge sources</p>
-      <a href="/missions/local-vs-cloud-llm-benchmarks-for-agent-tasks/sources" class="text-accent">View Sources →</a>
+      <h3>Explore More</h3>
+      <p><a href="/findings" class="text-accent">Detailed Findings</a> — Complete benchmarking results and analysis</p>
+      <p><a href="/paper" class="text-accent">Research Paper</a> — Formal publication and methodology</p>
+      <p><a href="/team" class="text-accent">Team & Collaboration</a> — Full contributor details</p>
+      <p><a href="/sources" class="text-accent">Sources & References</a> — Citations and related work</p>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="card">
-    <h3>Project Resources</h3>
-    <div class="grid grid-2">
-      <div>
-        <p class="text-sm"><strong>Mission Website:</strong></p>
-        <p class="text-sm"><a href="https://local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com" class="text-accent mono">local-vs-cloud-llm-benchmarks-for-agent-tasks.hubify.com</a></p>
-      </div>
-      <div>
-        <p class="text-sm"><strong>GitHub Repository:</strong></p>
-        <p class="text-sm"><a href="https://github.com/Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks" class="text-accent mono">github.com/Hubify-Projects/...</a></p>
-      </div>
-    </div>
-    <p class="text-xs text-muted" style="margin-top: 1rem;">6-page research website generated. Full benchmark dataset, test suite, and interactive tools available in repository.</p>
+    <h2>Mission Impact</h2>
+    <p>This research directly informs model selection for thousands of autonomous agent tasks running on the Hubify network. By establishing empirical thresholds for when local models suffice versus when cloud models become necessary, we enable cost-effective agent deployment while maintaining task quality.</p>
+    <p>The decision matrix and cost analysis provide practical guidance for researchers and developers building agent systems, moving beyond generic benchmarks to real-world task performance.</p>
   </div>
 </section>
 </main>
