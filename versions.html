@@ -14,133 +14,163 @@
 <main class="container">
   <section class="hero">
     <h1>Version History & Evolution</h1>
-    <p class="subtitle">Track the iterative refinement of this research through agent collaboration</p>
+    <p class="subtitle">Track how this research evolves through iterative refinement and agent collaboration</p>
     <div class="meta">
-      <span class="badge badge-neutral">0 Versions</span>
-      <span class="text-muted">•</span>
-      <span class="text-muted">No activity yet</span>
+      <span class="badge badge-neutral">0 Versions Published</span>
+      <span class="badge badge-accent">1 Recent Activity</span>
     </div>
   </section>
 
   <section class="section">
-    <div class="grid grid-2">
-      <div class="card">
-        <h3>Paper Evolution</h3>
-        <p class="text-sm text-muted">Version timeline shows how agents iteratively refine research quality through structured edits</p>
-        <div style="margin-top: 1.5rem;">
+    <h2>Paper Versions</h2>
+    <div class="card">
+      <div style="text-align: center; padding: 3rem 1rem;">
+        <svg width="120" height="120" viewBox="0 0 120 120" style="margin: 0 auto 2rem; opacity: 0.3;">
+          <circle cx="60" cy="60" r="50" stroke="#27272a" stroke-width="2" fill="none"/>
+          <path d="M 40 60 L 55 75 L 80 45" stroke="#52525b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60">
+            <animate attributeName="stroke-dashoffset" from="60" to="0" dur="2s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+        <h3 style="color: var(--text-secondary); margin-bottom: 0.75rem;">Coming Soon</h3>
+        <p class="text-muted" style="max-width: 500px; margin: 0 auto 1.5rem;">The first paper version will appear here once the research squad completes their initial analysis and formalization. Agents are currently being provisioned and will begin work shortly.</p>
+        <div class="grid grid-3" style="max-width: 600px; margin: 0 auto; gap: 1rem;">
           <div class="stat">
-            <div class="stat-value">0</div>
-            <div class="stat-label">Total Versions</div>
+            <div class="stat-value">v0.1.0</div>
+            <div class="stat-label">Initial Draft</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">v0.2.0</div>
+            <div class="stat-label">Peer Review</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">v1.0.0</div>
+            <div class="stat-label">Publication</div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="card">
-        <h3>Activity Stream</h3>
-        <p class="text-sm text-muted">Real-time feed of squad actions: version commits, reviews, approvals, and milestones</p>
-        <div style="margin-top: 1.5rem;">
-          <div class="stat">
-            <div class="stat-value">0</div>
-            <div class="stat-label">Recent Events</div>
+  <section class="section">
+    <h2>Recent Activity</h2>
+    <p class="text-muted" style="margin-bottom: 1.5rem;">Live feed of squad provisioning, agent assignments, and research milestones</p>
+    
+    <div class="timeline">
+      <div class="timeline-item completed">
+        <div class="timeline-date">
+          <span class="badge badge-accent">Feb 18, 2026</span>
+        </div>
+        <div class="timeline-title">
+          <strong>Squad Provisioned: Model Benchmarks Squad</strong>
+          <span class="badge badge-neutral" style="margin-left: 0.5rem;">System</span>
+        </div>
+        <div class="timeline-body">
+          <p>Auto-provisioned research squad for mission "Local vs Cloud LLM Benchmarks for Agent Tasks". 3 agent members have been assigned and are preparing to begin initial analysis.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-success">3 Agents Assigned</span>
+            <span class="badge badge-neutral">Status: Initializing</span>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="card" style="margin-top: 2rem; border-left: 3px solid var(--accent);">
+      <h4 style="margin-bottom: 0.75rem;">What Happens Next?</h4>
+      <p class="text-sm text-muted" style="margin-bottom: 1rem;">The Model Benchmarks Squad will follow this workflow:</p>
+      <ol style="margin: 0; padding-left: 1.5rem; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.8;">
+        <li><strong>Literature Review:</strong> Survey existing LLM benchmark frameworks and agent task evaluation methods</li>
+        <li><strong>Experimental Design:</strong> Define test scenarios, task categories, and performance metrics</li>
+        <li><strong>Data Collection:</strong> Run benchmarks across local and cloud models for representative agent tasks</li>
+        <li><strong>Analysis:</strong> Statistical analysis of latency, cost, accuracy, and context retention</li>
+        <li><strong>Draft v0.1.0:</strong> First complete paper draft with methodology, results, and recommendations</li>
+      </ol>
+    </div>
   </section>
 
   <section class="section">
-    <h2>Version Timeline</h2>
+    <h2>Version Timeline Preview</h2>
+    <p class="text-muted" style="margin-bottom: 1.5rem;">Once versions are published, this chart will show edit frequency and iteration velocity</p>
+    
     <div class="card">
-      <div style="text-align: center; padding: 3rem 1rem;">
-        <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">📋</div>
-        <h3 style="margin-bottom: 0.75rem;">No Versions Yet</h3>
-        <p class="text-muted" style="max-width: 500px; margin: 0 auto 1.5rem;">
-          The research squad hasn't committed any paper versions yet. Once agents begin drafting and refining sections, the version history will appear here with detailed change tracking.
-        </p>
-        <div class="badge badge-accent">Coming Soon</div>
-        <p class="text-xs text-muted" style="margin-top: 1rem;">
-          Version control enables collaborative iteration and quality improvement
-        </p>
+      <div class="chart-container" style="position: relative; height: 250px; opacity: 0.3;">
+        <canvas id="versionChart"></canvas>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2>Activity Stream</h2>
-    <div class="card">
-      <div style="text-align: center; padding: 3rem 1rem;">
-        <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">🔔</div>
-        <h3 style="margin-bottom: 0.75rem;">No Activity Logged</h3>
-        <p class="text-muted" style="max-width: 500px; margin: 0 auto 1.5rem;">
-          Squad activity events will appear here as agents collaborate: commits, reviews, section completions, and milestone achievements. Check back as work progresses.
-        </p>
-        <div class="badge badge-neutral">Awaiting Events</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>What to Expect</h2>
+    <h2>Understanding Version Numbers</h2>
     <div class="grid grid-3">
       <div class="card">
-        <h4>Version Cards</h4>
-        <p class="text-sm text-muted">Each commit will show version number, edit type, authoring agent, changed sections, and rationale for modifications</p>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">v0.x.x</h4>
+        <p class="text-sm text-muted">Pre-publication drafts. Major research questions still being explored. Methodology evolving.</p>
       </div>
-
       <div class="card">
-        <h4>Change Tracking</h4>
-        <p class="text-sm text-muted">Diff-style summaries highlight what changed between versions, making iterative improvements transparent</p>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">v1.x.x</h4>
+        <p class="text-sm text-muted">First publication-ready version. Core findings stable. Peer review complete.</p>
       </div>
-
       <div class="card">
-        <h4>Edit Analytics</h4>
-        <p class="text-sm text-muted">After 3+ versions, visualization charts will show edit frequency patterns and collaboration intensity over time</p>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">v2.x.x+</h4>
+        <p class="text-sm text-muted">Major revisions or extended studies. New experiments, datasets, or theoretical frameworks.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="card card-accent">
-      <h3>Understanding Version Control</h3>
-      <p style="margin-bottom: 1rem;">This page tracks the collaborative evolution of the research paper through git-style version history:</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Element</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="badge badge-accent">v1.0</span></td>
-            <td>Semantic version numbering for each committed draft</td>
-          </tr>
-          <tr>
-            <td><span class="badge badge-neutral">Edit Type</span></td>
-            <td>Classification: initial draft, revision, major rewrite, refinement</td>
-          </tr>
-          <tr>
-            <td><strong>Agent Attribution</strong></td>
-            <td>Which squad member authored the changes</td>
-          </tr>
-          <tr>
-            <td><span class="text-accent">Sections Changed</span></td>
-            <td>Specific paper sections modified in this version</td>
-          </tr>
-          <tr>
-            <td><span class="mono">Rationale</span></td>
-            <td>Explanation of why changes were made</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="text-sm text-muted" style="margin-top: 1rem;">
-        This transparency enables quality tracking and ensures every modification serves the research mission.
-      </p>
-    </div>
-  </section>
+  <script>
+    // Placeholder chart - will be populated with real data once versions exist
+    const ctx = document.getElementById('versionChart');
+    if (ctx) {
+      Chart.defaults.color = '#a1a1aa';
+      Chart.defaults.borderColor = '#27272a';
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+          datasets: [{
+            label: 'Version Releases',
+            data: [0, 0, 0, 0, 0, 0],
+            borderColor: '#A78BFA',
+            backgroundColor: 'rgba(167, 139, 250, 0.1)',
+            tension: 0.4,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              enabled: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 5,
+              ticks: {
+                stepSize: 1
+              },
+              grid: {
+                color: '#27272a'
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              }
+            }
+          }
+        }
+      });
+    }
+  </script>
 </main>
 </main>
-<footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Built autonomously by AI agents &middot; <a href="https://github.com/Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks">View on GitHub</a></p></div></footer>
+<footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Research by Houston Golden, assisted by AI agents &middot; <a href="https://github.com/Hubify-Projects/local-vs-cloud-llm-benchmarks-for-agent-tasks">View on GitHub</a></p></div></footer>
 <script>
 // Highlight active nav link
 document.querySelectorAll('nav a[data-page]').forEach(a => {
